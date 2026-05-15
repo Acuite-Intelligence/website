@@ -1,0 +1,22 @@
+/* Acuité Intelligence — Squarespace Custom CSS
+   Inject via: Design → Custom CSS
+   Last updated: 2026-05-15
+*/
+
+/* === Brand Variables === */
+:root {
+  --color-primary: /* TBD */;
+  --color-secondary: /* TBD */;
+  --color-accent: /* TBD */;
+  --color-bg: /* TBD */;
+  --color-text: /* TBD */;
+
+  --font-display: /* TBD */, serif;
+  --font-body: /* TBD */, sans-serif;
+}
+
+/* === Language Switcher === */
+/* Style the EN | FR toggle in the header */
+.lang-switcher {
+  /* TBD */
+}

@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Acuité Intelligence",
+  "url": "https://acuite-intelligence.com",
+  "logo": "https://acuite-intelligence.com/logo.png",
+  "description": "TBD",
+  "foundingDate": "TBD",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": ["French", "English"]
+  },
+  "sameAs": []
+}
