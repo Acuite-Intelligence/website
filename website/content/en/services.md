@@ -3,13 +3,13 @@
 ## Service Offerings
 
 ### Health Analytics
-Description of analytics services, capabilities, and outcomes.
+We provide descriptive and predictive analytics to uncover trends, measure program impact, and identify opportunities for improved outcomes. Deliverables include dashboards, cohort analysis, and KPI reports.
 
 ### Stakeholder Engagement
-Description of engagement services and approach.
+We design engagement strategies that align stakeholders around priorities and policy implementation, including workshops, communications playbooks, and stakeholder mapping.
 
 ### Strategic Advisory
-Description of strategic advisory services.
+We advise on program design, evaluation frameworks, and implementation roadmaps to ensure analytics are actionable and aligned with organizational objectives.
 
 ## Our Process
 1. Assessment

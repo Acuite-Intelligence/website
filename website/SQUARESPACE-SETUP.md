@@ -165,6 +165,17 @@ Paste this in **Settings → Advanced → Code Injection → Footer**:
 //   gtag('config', 'G-XXXXXXXXXX');
 // </script>
 
+/* Recommended for this site: Google Analytics 4 (GA4). */
+
+<!-- GA4 Header Snippet (copy into Header Code Injection, replace with your Measurement ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // Replace with your Measurement ID (G-...)
+</script>
+
 // Option C: Google Tag Manager — Add this to Header:
 // <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXXXX');</script>
 

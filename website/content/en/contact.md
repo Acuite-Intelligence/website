@@ -6,11 +6,13 @@ We'd love to hear from you. Reach out with questions, partnership inquiries, or 
 
 ## Contact Information
 
-**Email**: [your-email@acuite-intelligence.com]
+**Email**: contact@acuite-intelligence.com
 
-**Phone**: [Your phone number]
+**Phone**: +1 (438) 555-0100
 
-**Address**: [Your address]
+**Address**: Montréal, Québec, Canada
+
+**Business Hours**: Mon–Fri, 9:00–17:00 (ET)
 
 ---
 

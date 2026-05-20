@@ -3,13 +3,13 @@
 ## Offres de services
 
 ### Analytique Santé
-Description des services d'analyse, des capacités et des résultats.
+Nous fournissons des analyses descriptives et prédictives pour mettre en évidence les tendances, mesurer l'impact des programmes et repérer les opportunités d'amélioration. Livrables : tableaux de bord, analyses de cohortes et rapports KPI.
 
 ### Engagement des Parties Prenantes
-Description des services d'engagement et de l'approche.
+Nous concevons des stratégies d'engagement pour aligner les parties prenantes sur les priorités et la mise en œuvre des politiques, incluant ateliers, plans de communication et cartographie des parties prenantes.
 
 ### Conseil Stratégique
-Description des services de conseil stratégique.
+Nous conseillons sur la conception de programmes, les cadres d'évaluation et les feuilles de route de mise en œuvre pour garantir que l'analytique soit exploitable et alignée sur les objectifs organisationnels.
 
 ## Notre processus
 1. Évaluation

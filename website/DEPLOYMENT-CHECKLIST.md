@@ -95,7 +95,7 @@ For EACH page, add hreflang tags to the page's code block:
 ## Phase 4: Configure Analytics
 
 ### Choose Analytics Platform
-- [ ] **Plausible** (Recommended for GDPR/Quebec)
+- [ ] **Plausible** (GDPR-friendly option)
   - [ ] Create account at plausible.io
   - [ ] Add your domain to Plausible
   - [ ] Add Plausible script to Squarespace Header Code Injection
@@ -103,10 +103,10 @@ For EACH page, add hreflang tags to the page's code block:
   
 OR
 
-- [ ] **Google Analytics 4 (GA4)**
-  - [ ] Create GA4 property in Google Analytics console
-  - [ ] Copy your Measurement ID (G-XXXXXXXXXX)
-  - [ ] Add GA4 script to Squarespace Header Code Injection
+- [x] **Google Analytics 4 (GA4)** (Selected)
+  - [x] Create GA4 property in Google Analytics console
+  - [x] Copy your Measurement ID (G-XXXXXXXXXX)
+  - [x] Add GA4 script to Squarespace Header Code Injection (see snippet below)
   
 OR
 
@@ -118,6 +118,20 @@ OR
 - [ ] Test analytics by visiting site and checking real-time view in your analytics dashboard
 - [ ] Test language switch tracking by clicking language switcher and checking event in analytics
 - [ ] Test form submission tracking by submitting test contact form
+
+
+#### GA4 Header Snippet (paste into Header Code Injection)
+
+```html
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // Replace with your Measurement ID
+</script>
+```
 
 ---
 

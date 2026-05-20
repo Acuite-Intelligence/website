@@ -4,7 +4,7 @@
 **Accroche**: Analytique Santé et Engagement des Parties Prenantes
 
 **Copie Héro**: 
-Transformez la prestation de services de santé grâce à des informations fondées sur les données et à l'engagement significatif des parties prenantes.
+Transformez la prestation de services de santé grâce à des informations fondées sur les données et à l'engagement significatif des parties prenantes. Nous collaborons avec les organisations de santé pour concevoir des analyses qui guident les décisions, mesurent les résultats et facilitent l'adhésion des parties prenantes.
 
 ## Avantages clés
 - Analytique santé exploitable

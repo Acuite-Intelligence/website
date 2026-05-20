@@ -9,12 +9,15 @@ Acuité Intelligence s'associe aux organisations de santé pour libérer le pouv
 - Conseil Stratégique
 
 ## Notre équipe
-[Informations d'équipe et biographies à ajouter]
+Notre équipe réunit des chercheurs en santé, des data scientists et des spécialistes de l'engagement des parties prenantes ayant une expérience dans les systèmes de santé provinciaux et les organisations à but non lucratif.
 
 ## Pourquoi nous choisir?
-- Expertise approfondie en santé
-- Approche fondée sur les données
-- Solutions centrées sur les parties prenantes
+- Expertise approfondie en santé avec expérience de mise en œuvre
+- Approche basée sur les données reliant l'analytique à la prise de décision
+- Solutions centrées sur les parties prenantes conçues pour l'adoption et l'impact
+
+## Contact pour les partenariats
+Pour les demandes de partenariat et les RFP, envoyez un courriel à : contact@acuite-intelligence.com
 
 ---
 

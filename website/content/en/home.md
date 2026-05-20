@@ -4,7 +4,7 @@
 **Tagline**: Health Analytics & Stakeholder Engagement
 
 **Hero Copy**: 
-Transform healthcare delivery through data-driven insights and meaningful stakeholder engagement.
+Transform healthcare delivery through data-driven insights and meaningful stakeholder engagement. We partner with healthcare organizations to design analytics that inform policy, measure outcomes, and support stakeholder alignment.
 
 ## Key Benefits
 - Actionable health analytics

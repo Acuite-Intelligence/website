@@ -6,11 +6,13 @@ Nous serions ravis de vous entendre. Contactez-nous avec des questions, des prop
 
 ## Coordonnées
 
-**E-mail**: [votre-email@acuite-intelligence.com]
+**E-mail**: contact@acuite-intelligence.com
 
-**Téléphone**: [Votre numéro de téléphone]
+**Téléphone**: +1 (438) 555-0100
 
-**Adresse**: [Votre adresse]
+**Adresse**: Montréal, Québec, Canada
+
+**Heures d'ouverture**: Lun–Ven, 9:00–17:00 (HE)
 
 ---
 
