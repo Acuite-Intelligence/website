@@ -1969,5 +1969,40 @@ document.getElementById('linkedinModal').addEventListener('click', function(e) {
   </div>
 </div>
 
+<script>
+async function submitForm(event) {
+  event.preventDefault();
+
+  const endpoint = "https://script.google.com/macros/s/AKfycbzce4jM8MnODp2fU2uV6qTbOPvq7WmXg8jS-M7Mj5PSh5KjIHCuvWq4My-jkB9epv_y/exec";
+
+  // Detect language based on body class
+  const lang = document.body.classList.contains("fr") ? "FR" : "EN";
+
+  const payload = {
+    name: document.getElementById("name").value,
+    organization: document.getElementById("organization").value,
+    email: document.getElementById("email").value,
+    need: document.getElementById("need").value,
+    message: document.getElementById("message").value,
+    lang: lang
+  };
+
+  await fetch(endpoint, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+
+  // Show success message in correct language
+  if (lang === "FR") {
+    alert("Merci — votre message a été envoyé.");
+  } else {
+    alert("Thank you — your message has been sent.");
+  }
+}
+</script>
+
+  
 </body>
 </html>
