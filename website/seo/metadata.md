@@ -11,14 +11,14 @@ Each page entry contains:
 ## Home / Accueil
 
 ### English
-- **Title**: `Acuité Intelligence | [tagline TBD]`
-- **Description**: TBD
-- **Slug**: `/en` or `/`
+- **Title**: `Acuité Intelligence | Health Analytics & Stakeholder Engagement`
+- **Description**: `Acuité Intelligence provides health analytics and stakeholder engagement solutions. Unlock insights, drive outcomes. Learn more.`
+- **Slug**: `/` (primary) or `/en`
 
 ### French
-- **Title**: `Acuité Intelligence | [accroche TBD]`
-- **Description**: TBD
-- **Slug**: `/fr` or `/`
+- **Title**: `Acuité Intelligence | Analytique Santé et Engagement des Parties Prenantes`
+- **Description**: `Acuité Intelligence offre des solutions d'analytique santé et d'engagement des parties prenantes. Découvrez comment nous créons la valeur.`
+- **Slug**: `/fr`
 
 ---
 
@@ -26,12 +26,12 @@ Each page entry contains:
 
 ### English
 - **Title**: `About Us | Acuité Intelligence`
-- **Description**: TBD
-- **Slug**: `/en/about`
+- **Description**: `Learn about Acuité Intelligence's mission, team, and expertise in health analytics and stakeholder engagement. Who we are and what we do.`
+- **Slug**: `/en/about` or `/about`
 
 ### French
 - **Title**: `À propos | Acuité Intelligence`
-- **Description**: TBD
+- **Description**: `Découvrez la mission d'Acuité Intelligence, notre équipe et notre expertise. Comment nous créons de la valeur pour le secteur santé.`
 - **Slug**: `/fr/a-propos`
 
 ---
@@ -40,12 +40,12 @@ Each page entry contains:
 
 ### English
 - **Title**: `Services | Acuité Intelligence`
-- **Description**: TBD
-- **Slug**: `/en/services`
+- **Description**: `Explore our health analytics and stakeholder engagement services. Solutions tailored to your organization's needs.`
+- **Slug**: `/en/services` or `/services`
 
 ### French
 - **Title**: `Services | Acuité Intelligence`
-- **Description**: TBD
+- **Description**: `Explorez nos services d'analytique santé et d'engagement des parties prenantes. Des solutions adaptées à vos besoins.`
 - **Slug**: `/fr/services`
 
 ---
@@ -53,11 +53,11 @@ Each page entry contains:
 ## Contact
 
 ### English
-- **Title**: `Contact | Acuité Intelligence`
-- **Description**: TBD
-- **Slug**: `/en/contact`
+- **Title**: `Contact Us | Acuité Intelligence`
+- **Description**: `Get in touch with Acuité Intelligence. Reach out for inquiries, partnerships, or to learn more about our services.`
+- **Slug**: `/en/contact` or `/contact`
 
 ### French
-- **Title**: `Contact | Acuité Intelligence`
-- **Description**: TBD
+- **Title**: `Nous Contacter | Acuité Intelligence`
+- **Description**: `Contactez Acuité Intelligence. Envoyez-nous vos demandes, propositions de partenariat ou questions.`
 - **Slug**: `/fr/contact`

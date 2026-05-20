@@ -5,14 +5,26 @@
 
 /* === Brand Variables === */
 :root {
-  --color-primary: /* TBD */;
-  --color-secondary: /* TBD */;
-  --color-accent: /* TBD */;
-  --color-bg: /* TBD */;
-  --color-text: /* TBD */;
+  --color-primary: #0d1b2e;        /* Navy Deep */
+  --color-secondary: #1a3054;      /* Navy Mid */
+  --color-accent: #b8922e;         /* Gold */
+  --color-bg: #ffffff;             /* White */
+  --color-text: #0d1b2e;           /* Navy Deep (text) */
 
-  --font-display: /* TBD */, serif;
-  --font-body: /* TBD */, sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Extended palette */
+  --navy-light: #2a4a7a;
+  --slate: #3d5a80;
+  --steel: #6b8cae;
+  --mist: #b8cfe4;
+  --cloud: #e8f0f8;
+  --pearl: #f5f8fc;
+  --gold-light: #d4a93a;
+  --gold-muted: #e8d8a8;
+  --text-mid: #2a4060;
+  --text-muted: #5a7a9a;
 }
 
 /* === Language Switcher === */
