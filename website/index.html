@@ -1975,30 +1975,38 @@ async function submitForm(event) {
 
   const endpoint = "https://script.google.com/macros/s/AKfycbzce4jM8MnODp2fU2uV6qTbOPvq7WmXg8jS-M7Mj5PSh5KjIHCuvWq4My-jkB9epv_y/exec";
 
-  // Detect language based on body class
-  const lang = document.body.classList.contains("fr") ? "FR" : "EN";
-
   const payload = {
     name: document.getElementById("name").value,
     organization: document.getElementById("organization").value,
     email: document.getElementById("email").value,
     need: document.getElementById("need").value,
     message: document.getElementById("message").value,
-    lang: lang
+    lang: document.body.classList.contains("fr") ? "FR" : "EN"
   };
 
-  await fetch(endpoint, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+  try {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
 
-  // Show success message in correct language
-  if (lang === "FR") {
-    alert("Merci — votre message a été envoyé.");
-  } else {
-    alert("Thank you — your message has been sent.");
+    const result = await response.json();
+    console.log("Form response:", result);
+
+    if (result.status === "success") {
+      if (payload.lang === "FR") {
+        alert("Merci — votre message a été envoyé.");
+      } else {
+        alert("Thank you — your message has been sent.");
+      }
+      event.target.reset(); // Clear the form
+    } else {
+      alert("Error: " + (result.message || "Failed to send message"));
+    }
+  } catch (err) {
+    console.error("Form submission error:", err);
+    alert("Error submitting form: " + err.message);
   }
 }
 </script>
