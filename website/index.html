@@ -1947,34 +1947,29 @@ document.getElementById('linkedinModal').addEventListener('click', function(e) {
 async function submitForm(event) {
   event.preventDefault();
 
-  const endpoint = "https://script.google.com/macros/s/AKfycbzce4jM8MnODp2fU2uV6qTbOPvq7WmXg8jS-M7Mj5PSh5KjIHCuvWq4My-jkB9epv_y/exec";
+  const endpoint = "https://script.google.com/macros/library/d/1ZgUKKBMSrUJRC40gcQDc3EZaczGx9Hs2pLAWhD2jnAem9CqhNs1VKtff/2";
 
-  const payload = {
+  const payload = new URLSearchParams({
     name: document.getElementById("name").value,
     organization: document.getElementById("organization").value,
     email: document.getElementById("email").value,
     need: document.getElementById("need").value,
     message: document.getElementById("message").value,
     lang: document.body.classList.contains("fr") ? "FR" : "EN"
-  };
+  });
 
   try {
     const response = await fetch(endpoint, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
+      body: payload
     });
 
     const result = await response.json();
     console.log("Form response:", result);
 
     if (result.status === "success") {
-      if (payload.lang === "FR") {
-        alert("Merci — votre message a été envoyé.");
-      } else {
-        alert("Thank you — your message has been sent.");
-      }
-      event.target.reset(); // Clear the form
+      alert(payload.get("lang") === "FR" ? "Merci — votre message a été envoyé." : "Thank you — your message has been sent.");
+      event.target.reset();
     } else {
       alert("Error: " + (result.message || "Failed to send message"));
     }
