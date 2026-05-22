@@ -1772,11 +1772,11 @@
           </div>
         </div>
       </div>
-      <div class="contact-form fade-in">
+      <form id="contactForm" class="contact-form fade-in" onsubmit="submitForm(event)">
         <div class="form-row">
           <div class="form-group">
             <label><span lang-en>First Name</span><span lang-fr>Prénom</span></label>
-            <input type="text" placeholder="Marie">
+            <input type="text" id="name" placeholder="Marie" required>
           </div>
           <div class="form-group">
             <label><span lang-en>Last Name</span><span lang-fr>Nom</span></label>
@@ -1785,15 +1785,15 @@
         </div>
         <div class="form-group">
           <label><span lang-en>Organisation</span><span lang-fr>Organisation</span></label>
-          <input type="text">
+          <input type="text" id="organization">
         </div>
         <div class="form-group">
           <label>Email</label>
-          <input type="email">
+          <input type="email" id="email" required>
         </div>
         <div class="form-group">
           <label><span lang-en>Area of Interest</span><span lang-fr>Votre besoin</span></label>
-          <select>
+          <select id="need">
             <option value="">— Select a practice area / Choisir un domaine d'expertise —</option>
             <option value="p0">Study Architecture &amp; Methodological Advisory  |  Architecture d'études</option>
             <option value="p1">Data Infrastructure &amp; Systems  |  Infrastructure de données</option>
@@ -1805,36 +1805,10 @@
         </div>
         <div class="form-group">
           <label><span lang-en>Message</span><span lang-fr>Message</span></label>
-          <textarea placeholder="Tell us about your project or challenge...&#10;Décrivez votre projet ou défi..."></textarea>
+          <textarea id="message" placeholder="Tell us about your project or challenge...&#10;Décrivez votre projet ou défi..."></textarea>
         </div>
-        <button class="form-submit"><span lang-en>Send Message</span><span lang-fr>Envoyer</span></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section id="booking">
-  <div class="container">
-    <div class="booking-inner">
-      <div class="fade-in">
-        <p class="section-eyebrow"><span lang-en>Schedule</span><span lang-fr>Nous joindre</span></p>
-        <h2 class="section-title"><span lang-en>Book a <em>meeting</em></span><span lang-fr>Prendre <em>rendez-vous</em></span></h2>
-        <p class="section-lead" lang-en>Select a time that works for you. Discovery calls are 30 minutes — no preparation required.</p>
-        <p class="section-lead" lang-fr>Choisissez un moment qui vous convient. Les appels découverte durent 30 minutes et ne nécessitent aucune préparation.</p>
-        <div style="margin-top: 2rem; padding: 1.5rem; background: var(--pearl); border-left: 3px solid var(--gold); border-radius: 2px;">
-          <p style="font-size: 0.82rem; color: var(--text-mid); line-height: 1.7;" lang-en>Sessions available in <strong>English or French</strong>. If you have a preference, please mention it when booking.</p>
-          <p style="font-size: 0.82rem; color: var(--text-mid); line-height: 1.7;" lang-fr>Les appels sont offerts <strong>en français ou en anglais</strong>. Indiquez votre préférence au moment de la réservation.</p>
-        </div>
-      </div>
-      <div class="calendly-placeholder fade-in">
-        <strong><span lang-en>Calendar Coming Soon</span><span lang-fr>Calendrier bientôt disponible</span></strong>
-        <p lang-en>Once your Calendly account is set up, your booking calendar will appear here. Clients will be able to schedule discovery calls directly from this page.</p>
-        <p lang-fr>Une fois votre compte Calendly configuré, votre calendrier de disponibilités s'affichera à cet endroit. Vos clients pourront réserver un appel découverte directement à partir de cette page.</p>
-        <div style="margin-top: 1.5rem;">
-          <a href="#contact" class="btn-primary"><span lang-en>Contact Us Instead</span><span lang-fr>Écrivez-nous</span></a>
-        </div>
-      </div>
+        <button type="submit" class="form-submit"><span lang-en>Send Message</span><span lang-fr>Envoyer</span></button>
+      </form>
     </div>
   </div>
 </section>
