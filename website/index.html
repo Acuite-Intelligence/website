@@ -1339,7 +1339,7 @@
     <li><a href="#team"><span lang-en>Our Team</span><span lang-fr>L'équipe</span></a></li>
     <li><a href="#sectors"><span lang-en>Sectors</span><span lang-fr>Secteurs</span></a></li>
     <li class="nav-lang-item"><button class="nav-lang-toggle active" id="navLangEn" onclick="setLang('en')">EN</button><span class="nav-lang-sep">|</span><button class="nav-lang-toggle" id="navLangFr" onclick="setLang('fr')">FR</button></li>
-    <li><a href="#contact" class="nav-cta"><span lang-en>Book a Meeting</span><span lang-fr>Nous joindre</span></a></li>
+    <li><a href="#contact" class="nav-cta"><span lang-en>Get in Touch</span><span lang-fr>Nous joindre</span></a></li>
   </ul>
   <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span>
@@ -1354,7 +1354,7 @@
   <a href="#services" onclick="closeMenu()"><span lang-en>Practice Areas</span><span lang-fr>Expertises</span></a>
   <a href="#team" onclick="closeMenu()"><span lang-en>Our Team</span><span lang-fr>L'équipe</span></a>
   <a href="#sectors" onclick="closeMenu()"><span lang-en>Sectors</span><span lang-fr>Secteurs</span></a>
-  <a href="#contact" class="mobile-cta" onclick="closeMenu()"><span lang-en>Book a Meeting</span><span lang-fr>Nous joindre</span></a>
+  <a href="#contact" class="mobile-cta" onclick="closeMenu()"><span lang-en>Get in Touch</span><span lang-fr>Nous joindre</span></a>
   <div class="mobile-lang">
     <button id="mobileLangEn" class="active" onclick="setLang('en'); updateMobileLang('en')">EN — English</button>
     <button id="mobileLangFr" onclick="setLang('fr'); updateMobileLang('fr')">FR — Français</button>
@@ -1376,7 +1376,7 @@
       <p class="hero-subtitle hero-subtitle-fr">Les systèmes de santé croulent sous les données. Ce qui fait défaut, c'est le courage de les transformer en décisions. Nous construisons les données probantes, les modèles et l'intelligence stratégique qui permettent de passer aux actes — de la planification de la main-d'œuvre jusqu'aux résultats cliniques.</p>
       <div class="hero-actions">
         <a href="#services" class="btn-primary"><span lang-en>Explore Services</span><span lang-fr>Nos services</span></a>
-        <a href="#booking" class="btn-outline"><span lang-en>Book a Discovery Call</span><span lang-fr>Nous joindre</span></a>
+        <a href="#contact" class="btn-outline"><span lang-en>Get in Touch</span><span lang-fr>Nous joindre</span></a>
       </div>
     </div>
   </div>
@@ -1656,7 +1656,7 @@
             <div class="team-avatar">FM</div>
             <div>
               <p class="team-member-name">Dr. Faraz Moharrami</p>
-              <p class="team-member-title"><span lang-en>Co-Founder &amp; CSO</span><span lang-fr>Cofondateur et DSciS</span></p>
+              <p class="team-member-title"><span lang-en>Co-Founder &amp; CSO</span><span lang-fr>Cofondateur et Directeur scientifique</span></p>
             </div>
           </div>
           <p class="team-bio" lang-en>Faraz brings deep expertise in clinical research, machine learning, AI-driven analytics, and counterfactual modelling to Acuité's evidence practice. A DMD and PhD holder with a background in dentistry and oral health, he bridges clinical science and data-driven decision-making — applying causal inference and advanced ML methods to study design, predictive modelling, and health outcomes research across dental and broader health system contexts.</p>
@@ -1793,19 +1793,29 @@
         </div>
         <div class="form-group">
           <label><span lang-en>Area of Interest</span><span lang-fr>Votre besoin</span></label>
-          <select id="need">
-            <option value="">— Select a practice area / Choisir un domaine d'expertise —</option>
-            <option value="p0">Study Architecture &amp; Methodological Advisory  |  Architecture d'études</option>
-            <option value="p1">Data Infrastructure &amp; Systems  |  Infrastructure de données</option>
-            <option value="p2">Clinical Analytics &amp; Epidemiology  |  Analyse clinique et épidémiologie</option>
-            <option value="p3">Population Modelling &amp; Workforce Analytics  |  Modélisation et main-d'œuvre</option>
-            <option value="p4">Stakeholder Engagement &amp; Facilitation  |  Mobilisation des parties prenantes</option>
-            <option value="other">Other / Autre</option>
+          <select id="need" lang-en>
+            <option value="">— Select a practice area —</option>
+            <option value="p0">Study Architecture &amp; Methodological Advisory</option>
+            <option value="p1">Data Infrastructure &amp; Systems</option>
+            <option value="p2">Clinical Analytics &amp; Epidemiology</option>
+            <option value="p3">Population Modelling &amp; Workforce Analytics</option>
+            <option value="p4">Stakeholder Engagement &amp; Facilitation</option>
+            <option value="other">Other</option>
+          </select>
+          <select lang-fr onchange="document.getElementById('need').value=this.value">
+            <option value="">— Choisir un domaine d'expertise —</option>
+            <option value="p0">Architecture d'études et conseil méthodologique</option>
+            <option value="p1">Infrastructure de données et systèmes</option>
+            <option value="p2">Analyse clinique et épidémiologie</option>
+            <option value="p3">Modélisation des populations et analytique de la main-d'œuvre</option>
+            <option value="p4">Mobilisation des parties prenantes et facilitation</option>
+            <option value="other">Autre</option>
           </select>
         </div>
         <div class="form-group">
           <label><span lang-en>Message</span><span lang-fr>Message</span></label>
-          <textarea id="message" placeholder="Tell us about your project or challenge...&#10;Décrivez votre projet ou défi..."></textarea>
+          <textarea id="message" lang-en placeholder="Tell us about your project or challenge..."></textarea>
+          <textarea lang-fr placeholder="Décrivez votre projet ou défi..." oninput="document.getElementById('message').value=this.value"></textarea>
         </div>
         <button type="submit" class="form-submit"><span lang-en>Send Message</span><span lang-fr>Envoyer</span></button>
       </form>
