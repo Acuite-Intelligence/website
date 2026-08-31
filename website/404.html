@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page not found | Acuité Intelligence</title>
+<script>
+(function () {
+  var p = location.pathname.replace(/\/+$/, "");
+  if (/\/imgcarms(\/index\.html)?$/i.test(p)) {
+    location.replace("/imgcarms/" + location.search + location.hash);
+  }
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root { --navy-deep:#0d1b2e; --gold:#b8922e; --gold-light:#d4a93a; --text-muted:#5a7a9a; --pearl:#f5f8fc; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--pearl); color:var(--navy-deep);
+         font-family:'DM Sans',system-ui,sans-serif; font-weight:300; padding:2rem; }
+  main { max-width:32rem; text-align:center; }
+  .mark { font-size:.72rem; letter-spacing:.28em; text-transform:uppercase; color:var(--text-muted); margin-bottom:1.5rem; }
+  h1 { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; font-size:clamp(2rem,6vw,3rem); margin-bottom:.75rem; }
+  p.msg { color:var(--text-muted); margin-bottom:2rem; }
+  a { display:inline-block; color:var(--navy-deep); text-decoration:none; border:1px solid rgba(13,27,46,.2);
+      padding:.7rem 1.4rem; border-radius:2px; font-size:.9rem; transition:all .2s; }
+  a:hover { background:var(--navy-deep); color:#fff; border-color:var(--navy-deep); }
+</style>
+</head>
+<body>
+<main>
+  <p class="mark">Acuité Intelligence</p>
+  <h1>Page not found</h1>
+  <p class="msg">The page you're looking for doesn't exist or has moved.</p>
+  <p><a href="/">Return to acuiteintelligence.com</a></p>
+</main>
+</body>
+</html>
