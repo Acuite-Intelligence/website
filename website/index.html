@@ -118,6 +118,60 @@
 
   .nav-links a:hover { color: var(--gold); }
 
+  /* ─── NAV DROPDOWN (Tools) ─── */
+  .nav-dropdown { position: relative; }
+
+  .nav-dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+
+  .nav-caret {
+    font-size: 0.6rem;
+    transition: transform 0.2s ease;
+  }
+
+  .nav-dropdown:hover .nav-caret,
+  .nav-dropdown:focus-within .nav-caret {
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 4px);
+    margin-top: 0.9rem;
+    background: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: 2px;
+    box-shadow: 0 12px 32px rgba(13,27,46,0.14);
+    min-width: 190px;
+    padding: 0.4rem 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 0.65rem 1.15rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown-menu a:hover { color: var(--gold); background: var(--pearl); }
+
   .nav-lang {
     display: flex;
     gap: 0.4rem;
@@ -281,6 +335,21 @@
 
   .mobile-menu .mobile-cta:hover {
     background: var(--navy-mid) !important;
+  }
+
+  .mobile-menu .mobile-submenu-label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 1rem 0 0.25rem;
+  }
+
+  .mobile-menu .mobile-submenu-item {
+    padding-left: 1rem;
+    font-size: 0.82rem !important;
+    color: var(--text-mid) !important;
   }
 
   .mobile-menu .mobile-lang {
@@ -1390,6 +1459,12 @@
     <li><a href="#services"><span lang-en>Practice Areas</span><span lang-fr>Expertises</span></a></li>
     <li><a href="#team"><span lang-en>Our Team</span><span lang-fr>L'équipe</span></a></li>
     <li><a href="#sectors"><span lang-en>Sectors</span><span lang-fr>Secteurs</span></a></li>
+    <li class="nav-dropdown">
+      <a href="#" class="nav-dropdown-trigger" onclick="return false;" aria-haspopup="true"><span lang-en>Tools</span><span lang-fr>Outils</span> <span class="nav-caret">&#9662;</span></a>
+      <ul class="nav-dropdown-menu">
+        <li><a href="/imgcarms/" target="_blank" rel="noopener"><span lang-en>IMG Matches</span><span lang-fr>Jumelage des DHCEU</span></a></li>
+      </ul>
+    </li>
     <li class="nav-lang-item"><button class="nav-lang-toggle active" id="navLangEn" onclick="setLang('en')">EN</button><span class="nav-lang-sep">|</span><button class="nav-lang-toggle" id="navLangFr" onclick="setLang('fr')">FR</button></li>
     <li><a href="#contact" class="nav-cta"><span lang-en>Get in Touch</span><span lang-fr>Nous joindre</span></a></li>
   </ul>
@@ -1406,6 +1481,8 @@
   <a href="#services" onclick="closeMenu()"><span lang-en>Practice Areas</span><span lang-fr>Expertises</span></a>
   <a href="#team" onclick="closeMenu()"><span lang-en>Our Team</span><span lang-fr>L'équipe</span></a>
   <a href="#sectors" onclick="closeMenu()"><span lang-en>Sectors</span><span lang-fr>Secteurs</span></a>
+  <div class="mobile-submenu-label"><span lang-en>Tools</span><span lang-fr>Outils</span></div>
+  <a href="/imgcarms/" target="_blank" rel="noopener" class="mobile-submenu-item" onclick="closeMenu()"><span lang-en>IMG Matches</span><span lang-fr>Jumelage des DHCEU</span></a>
   <a href="#contact" class="mobile-cta" onclick="closeMenu()"><span lang-en>Get in Touch</span><span lang-fr>Nous joindre</span></a>
   <div class="mobile-lang">
     <button id="mobileLangEn" class="active" onclick="setLang('en'); updateMobileLang('en')">EN — English</button>
